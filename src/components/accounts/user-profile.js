@@ -173,16 +173,16 @@ const UserProfile = () => {
 
   const handleSaveAvatar = async (input) => {
     try {
-      setAvatarLoading(true);
+      // setAvatarLoading(true);
       var formData = new FormData();
       formData.append("user[user_profile_attributes][avatar]", input.file);
       await updateAvatar(user.slug, formData);
-      setAvatarLoading(false);
+      // setAvatarLoading(false);
       toast.success("Avatar Image Updated Successfully");
       setAvatar({ file: null, base64: null });
       dispatch(user_load_by_token_thunk(getCookies()));
     } catch (error) {
-      setAvatarLoading(false);
+      // setAvatarLoading(false);
       console.log("Error in saving the avatar", error);
     }
   };
