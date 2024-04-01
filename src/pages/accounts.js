@@ -25,7 +25,7 @@ import PlayNFTs from "../components/accounts/play-nfts";
 import Referral from "../components/accounts/referral";
 import ReferEarnInstruction from "../components/accounts/refer-earn-instruction";
 import DashBoardIndigg from "../components/accounts/dash-board-indigg";
-import UserManagementUserProfile from "../components/accounts/user-management-profile/index";
+import UserManagementUserProfile from "../components/accounts/user-management-profile";
 import UserManagementSubAdmin from "../components/accounts/user-management-sub-admin";
 import GameHistory from "../components/accounts/game-history";
 import MyTransactions from "../components/accounts/my-transactions";
