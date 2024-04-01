@@ -191,7 +191,7 @@ const UserProfile = () => {
     if (openToKycPopup === "fracto") {
       setKycModal(true);
     }
-  }, []);
+  }, [openToKycPopup]);
 
   return (
     <>
