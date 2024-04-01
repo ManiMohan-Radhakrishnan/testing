@@ -1204,7 +1204,7 @@ const Wallet = () => {
                                       {historyListy.map((obj, i) => (
                                         <div className="row yield-history">
                                           <div className="col-md-2">
-                                            <img src={obj.asset_url} />
+                                            <img src={obj.asset_url} alt="" />
                                           </div>
                                           <div className="col-md-3">
                                             <div

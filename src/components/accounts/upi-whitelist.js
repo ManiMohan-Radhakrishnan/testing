@@ -426,7 +426,9 @@ const UPIWhitelist = () => {
                       value={upi}
                       disabled
                     />
-                    {upiIdValid && <img src={Tick} className="tick-img" />}
+                    {upiIdValid && (
+                      <img src={Tick} alt="Tick mark" className="tick-img" />
+                    )}
                   </>
                 ) : (
                   <>
@@ -443,7 +445,9 @@ const UPIWhitelist = () => {
                       disabled={inputDisabled ? inputDisabled : false}
                     />
 
-                    {upiIdValid && <img src={Tick} className="tick-img" />}
+                    {upiIdValid && (
+                      <img src={Tick} alt="Tick mark" className="tick-img" />
+                    )}
                   </>
                 )}
               </div>
