@@ -44,7 +44,7 @@ const UserProfile = () => {
   const bgImageRef = useRef(null);
   const avatarImageRef = useRef(null);
   const [avatar, setAvatar] = useState({ file: null, base64: null });
-  const [avatarLoading, setAvatarLoading] = useState(false);
+  // const [avatarLoading, setAvatarLoading] = useState(false);
 
   const [bgLoading, setBgLoading] = useState(false);
   const [editModal, setEditModal] = useState(false);
