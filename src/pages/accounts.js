@@ -26,7 +26,7 @@ import Referral from "../components/accounts/referral";
 import ReferEarnInstruction from "../components/accounts/refer-earn-instruction";
 import DashBoardIndigg from "../components/accounts/dash-board-indigg";
 // import UserManagementProfile from "../components/accounts/user-management-profile";
-import UserManagementSubAdmin from "../components/accounts/user-management-sub-admin";
+// import UserManagementSubAdmin from "../components/accounts/user-management-sub-admin";
 import GameHistory from "../components/accounts/game-history";
 import MyTransactions from "../components/accounts/my-transactions";
 import IndiggProfile from "../components/accounts/indigg-profile";
@@ -85,7 +85,7 @@ const Accounts = () => {
     "referral",
     "refer-earn-instruction",
     "dashboard",
-    "user-management-sub-admin",
+    // "user-management-sub-admin",
     // "user-management-profile",
     "game-history",
     "my-transactions",
@@ -131,9 +131,9 @@ const Accounts = () => {
         // if (response.find((v) => v?.name_key === "user")) {
         //   Menus.push("user-management-profile");
         // }
-        if (response.find((v) => v?.name_key === "guildrole")) {
-          Menus.push("user-management-sub-admin");
-        }
+        // if (response.find((v) => v?.name_key === "guildrole")) {
+        //   Menus.push("user-management-sub-admin");
+        // }
         if (response.find((v) => v?.name_key === "activity")) {
           Menus.push("guild-activity");
         }
@@ -220,9 +220,9 @@ const Accounts = () => {
         {/* {currentPage === "user-management-profile" && (
           <PrivateRoute component={UserManagementProfile} />
         )} */}
-        {currentPage === "user-management-sub-admin" && (
+        {/* {currentPage === "user-management-sub-admin" && (
           <PrivateRoute component={UserManagementSubAdmin} />
-        )}
+        )} */}
         {currentPage === "game-history" && <GameHistory />}
         {currentPage === "my-transactions" && <MyTransactions />}
 

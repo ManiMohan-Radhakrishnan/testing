@@ -135,7 +135,7 @@ const SideNav = ({
     "guild-mynft",
     "guild-wallet",
     // "user-management-profile",
-    "user-management-sub-admin",
+    // "user-management-sub-admin",
     "guild-activity",
     "game-history",
   ];
