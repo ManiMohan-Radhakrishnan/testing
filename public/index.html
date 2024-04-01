@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico?v=2" />
+    <meta name="robots" content="noindex, nofollow, nosnippet" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Jump.trade for popular NFTs" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link
+      rel="manifest"
+      href="%PUBLIC_URL%/manifest.json"
+      crossorigin="use-credentials"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.fwSettings = {
+        widget_id: 84000001506,
+      };
+      !(function () {
+        if ("function" != typeof window.FreshworksWidget) {
+          var n = function () {
+            n.q.push(arguments);
+          };
+          (n.q = []), (window.FreshworksWidget = n);
+        }
+      })();
+    </script>
+    <script
+      type="text/javascript"
+      src="https://ind-widget.freshworks.com/widgets/84000001506.js"
+      async
+      defer
+    ></script>
+    <!-- <script id="_webengage_script_tag" type="text/javascript">
+      var webengage;
+      !(function (w, e, b, n, g) {
+        function o(e, t) {
+          e[t[t.length - 1]] = function () {
+            r.__queue.push([t.join("."), arguments]);
+          };
+        }
+        var i,
+          s,
+          r = w[b],
+          z = " ",
+          l = "init options track screen onReady".split(z),
+          a =
+            "webPersonalization feedback survey notification notificationInbox".split(
+              z
+            ),
+          c = "options render clear abort".split(z),
+          p = "Prepare Render Open Close Submit Complete View Click".split(z),
+          u = "identify login logout setAttribute".split(z);
+        if (!r || !r.__v) {
+          for (
+            w[b] = r = { __queue: [], __v: "6.0", user: {} }, i = 0;
+            i < l.length;
+            i++
+          )
+            o(r, [l[i]]);
+          for (i = 0; i < a.length; i++) {
+            for (r[a[i]] = {}, s = 0; s < c.length; s++)
+              o(r[a[i]], [a[i], c[s]]);
+            for (s = 0; s < p.length; s++) o(r[a[i]], [a[i], "on" + p[s]]);
+          }
+          for (i = 0; i < u.length; i++) o(r.user, ["user", u[i]]);
+          setTimeout(function () {
+            var f = e.createElement("script"),
+              d = e.getElementById("_webengage_script_tag");
+            (f.type = "text/javascript"),
+              (f.async = !0),
+              (f.src =
+                ("https:" == e.location.protocol
+                  ? "https://widgets.in.webengage.com"
+                  : "http://widgets.in.webengage.com") +
+                "/js/webengage-min-v-6.0.js"),
+              d.parentNode.insertBefore(f, d);
+          });
+        }
+      })(window, document, "webengage");
+      webengage.init("in~~10a5cbb21");
+    </script> -->
+
+    <!-- Google Tag Manager -->
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W5N7NHQ');</script> -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NN37BTB");
+    </script>
+
+    <!-- End Google Tag Manager -->
+
+    <!-- <script data-obct type = "text/javascript">
+    /** DO NOT MODIFY THIS CODE**/
+    !function(_window, _document) {
+      var OB_ADV_ID = '00dcf90d9db98bfc146eb9840c934f5605';
+      if (_window.obApi) {
+        var toArray = function(object) {
+          return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
+        };
+        _window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
+        return;
+      }
+      var api = _window.obApi = function() {
+        api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
+      };
+      api.version = '1.1';
+      api.loaded = true;
+      api.marketerId = OB_ADV_ID;
+      api.queue = [];
+      var tag = _document.createElement('script');
+      tag.async = true;
+      tag.src = '//amplify.outbrain.com/cp/obtp.js';
+      tag.type = 'text/javascript';
+      var script = _document.getElementsByTagName('script')[0];
+      script.parentNode.insertBefore(tag, script);
+    }(window, document);
+  
+    obApi('track', 'PAGE_VIEW');
+  </script> -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1070108953553763");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1070108953553763&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 309444590 -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-309444590"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-309444590'); </script> -->
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Jump.trade</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-56JT3Z4");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P4D4V5K");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <!-- <script>
+      (function (w, i, d, g, e, t, s) {
+        t = i.createElement(g);
+        t.async = 1;
+        t.src = e;
+        s = i.getElementsByTagName(g)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "_lkda",
+        "script",
+        "//app.getwoohoo.com/28221/script.js"
+      );
+    </script> -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NN37BTB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5N7NHQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <!-- End Google Tag Manager (noscript) -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+
+      
+    -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-56JT3Z4"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P4D4V5K"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>

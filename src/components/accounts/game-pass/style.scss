@@ -1,0 +1,250 @@
+@import "../../../styles/common";
+section.game-code-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  @media screen and (max-width: 520px) {
+    gap: 1rem 0;
+  }
+  p.no-data {
+    display: block;
+    margin: auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+.game-code {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0.2rem;
+  position: relative;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  background: #212031;
+  width: calc(25% - 1rem);
+  @media screen and (max-width: 1366px) {
+    width: calc(33.333% - 1rem);
+  }
+  @media screen and (max-width: 991px) {
+    width: calc(50% - 1rem);
+  }
+  @media screen and (max-width: 520px) {
+    width: 100%;
+  }
+  &.expired {
+    opacity: 1;
+    pointer-events: none;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    background: #4b4a5b;
+    // background: #d3d8e0;
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   height: 100%;
+    //   width: 100%;
+    //   backdrop-filter: blur(0.3rem);
+    //   backdrop-filter: blur(0.12rem);
+    //   background: transparent
+    //     linear-gradient(182deg, #00000000 36%, #00000073 60%) 0% 0% no-repeat
+    //     padding-box;
+    // }
+    * {
+      opacity: 0.85;
+    }
+    .img-block img {
+      opacity: 0.4;
+    }
+    &::after {
+      content: attr(data-value);
+      position: absolute;
+      background: #ec1616;
+      color: #ffffff;
+      padding: 0.4rem 1rem;
+      line-height: 1;
+      font-size: 1rem;
+      border-radius: 0 0 0 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      margin: auto;
+      font-weight: 800;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .nft-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      //   margin-bottom: 1rem;
+    }
+    .timer-block {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0 0 0 0.5rem;
+      background-color: #ec7c49;
+      // background-color: #7e0000;
+      position: absolute;
+      inset: 0 0 auto auto;
+      h4 {
+        color: white;
+        font-size: 1rem;
+        font-family: $proxima-nova;
+        font-weight: 500;
+        outline: none;
+        margin: 0;
+      }
+      span {
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: $proxima-nova;
+        &.card-interval {
+          margin-right: 0.25rem;
+        }
+      }
+    }
+    .img-block {
+      width: 100%;
+      max-width: 15rem;
+      margin-right: auto;
+      min-height: 5rem;
+      min-width: 5rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin-left: auto;
+      padding: 0rem;
+      margin-bottom: 1rem;
+      user-select: none;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    .game-code-detail {
+      h6 {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+        margin-top: 0;
+      }
+      h4 {
+        margin-bottom: 0.2rem;
+        font-size: 1.6rem;
+        text-align: center;
+        color: #fff;
+        font-family: $proxima-nova;
+        font-weight: 600;
+      }
+      h5 {
+        font-size: 1rem;
+        font-family: $proxima-nova;
+        font-weight: 600;
+
+        &.transform {
+          text-transform: capitalize;
+
+          span {
+            color: #9c9c9b;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+    .game-download-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      min-height: 2rem;
+      padding: 0.25rem 0;
+      align-items: center;
+      justify-content: center;
+      h4 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.15rem;
+        font-family: $proxima-nova;
+        font-weight: 400;
+        outline: none;
+        color: #ec7c49;
+        margin: 0;
+        animation: flickerAnimation 1.5s infinite;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        padding: 0.25rem 0.5rem;
+        border-radius: 5rem;
+        gap: 0.25rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: #ec7c49;
+        background-color: #212031;
+        border: 1px solid #ec7c49;
+        svg {
+          fill: #ec7c49;
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: transparent;
+          color: #ffff;
+          svg {
+            fill: #ffff;
+          }
+        }
+      }
+    }
+  }
+  .game-code-info-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    .game-code-price-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        font-family: $proxima-nova;
+        font-weight: 400;
+        color: #ffffffa8;
+      }
+      h5 {
+        font-size: 1rem;
+        font-family: $proxima-nova;
+        font-weight: 600;
+        color: #fff;
+
+        .caption {
+          font-size: 0.9rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          color: #929292;
+        }
+      }
+    }
+  }
+}

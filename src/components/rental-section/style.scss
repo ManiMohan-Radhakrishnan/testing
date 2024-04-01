@@ -1,0 +1,202 @@
+@import "../../styles/common";
+.get-rental-nft-alert-box {
+  color: #141619;
+  background-color: #dee0e4;
+  border-color: transparent;
+  padding: 0;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  .get-rental-nft-header {
+    padding: 1rem;
+    background: #d7d9dd;
+    .h4 {
+      margin-bottom: 0.3rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .get-rental-nft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    @media screen and (max-width: 580px) {
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .get-rental-nft-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .tournament_img {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 0.5rem;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -o-object-position: center;
+        object-position: center;
+      }
+      .get-rental-nft-content-info {
+        display: flex;
+        flex-direction: column;
+        h5 {
+          font-weight: 700;
+          margin-bottom: 0rem;
+          margin-top: 0rem;
+          color: #1d1c2c;
+        }
+        p {
+          margin: 0;
+
+          color: #4c4c4c;
+
+          i {
+            font-style: normal;
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .timer-btn-block {
+      @media screen and (max-width: 580px) {
+        margin-left: 0rem;
+        width: calc(100%);
+        margin-top: 1.5rem;
+      }
+      .timer-box {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 580px) {
+          justify-content: flex-end;
+        }
+        h6 {
+          margin: 0 0.5rem 0 0;
+          line-height: 1;
+        }
+        .nft-counter {
+          .counter-time {
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+          .counter-interval {
+            margin-left: 0.2rem;
+            font-size: 0.85rem !important;
+            font-weight: 400;
+          }
+          .interval-gap {
+            margin-right: 0.6rem;
+          }
+        }
+      }
+      .theme-btn {
+        min-width: 9rem;
+        border: none;
+        box-shadow: none !important;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        position: relative;
+
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 50rem;
+        margin: 0.5rem auto;
+        width: 100%;
+        // max-width: 20rem;
+        background: #de6f00;
+        &:hover,
+        &:focus,
+        &:active {
+          // border: solid 1px #de6f00;
+          background: #de6f00a3;
+          color: #ffffff !important;
+        }
+        &.theme-btn-sec {
+          min-width: 12rem;
+          border: none;
+          box-shadow: none !important;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.3s;
+          position: relative;
+          padding: 0.5rem;
+          font-size: 1.1rem;
+          border-radius: 50rem;
+          margin: 0.5rem auto;
+          width: 100%;
+          max-width: 20rem;
+          background: #4c4d5a;
+          border: solid 1px transparent;
+          border-radius: 50rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          &:hover,
+          &:focus,
+          &:active {
+            border: solid 1px #4c4d5a;
+            background: transparent;
+            color: #ffffff !important;
+          }
+        }
+
+        &.rounded-bordered {
+          background: transparent;
+          border: 0.1rem solid #4c4d5a;
+          color: #ffffff !important;
+
+          &:hover,
+          &:focus,
+          &:active,
+          &.active {
+            border: solid 1px transparent;
+            background: #4c4d5a;
+
+            color: #ffffff !important;
+          }
+          &.icon-btn {
+            height: 2.3rem;
+            width: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              height: 1.2rem;
+              width: 1.2rem;
+              color: #4c4d5a;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+              svg {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+
+        &:disabled {
+          background: #de6f00a3;
+          color: #ffffff;
+          border: none;
+          opacity: 0.6;
+        }
+        span {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}

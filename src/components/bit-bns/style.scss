@@ -1,0 +1,44 @@
+@import "../../styles/common";
+
+.pay-list-back {
+  display: flex;
+  align-items: center;
+  font-family: $proxima-nova;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.current-balance {
+  box-shadow: #00000014 0px 10px 30px;
+  border-radius: 0.7rem;
+  color: black;
+
+  .cb-title {
+    font-size: 0.8rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+  }
+
+  .cb-balance {
+    font-size: 2rem;
+    font-family: $proxima-nova;
+    font-weight: 700;
+  }
+}
+
+.transak_modal-overlay {
+  z-index: 999 !important;
+}
+.transak_modal {
+  z-index: 1000 !important;
+}
+
+.bitbns-deposite-modal {
+  .modal-body {
+    padding: 0;
+    iframe {
+      width: 100%;
+      min-height: 40rem;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../styles/common";
+
+.copy-content {
+  border: 1px solid black;
+  border-radius: 0.6rem;
+  padding: 0.7rem;
+
+  .copy-content-text {
+    font-family: $proxima-nova;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: black;
+    margin-top: 3px;
+    width: calc(100% - 30px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    svg {
+      cursor: pointer;
+    }
+  }
+}

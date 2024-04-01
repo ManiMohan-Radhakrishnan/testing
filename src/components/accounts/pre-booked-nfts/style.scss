@@ -1,0 +1,85 @@
+@import "../../../styles/common";
+
+.prebook-status-table-block {
+  background: #fff;
+  margin-bottom: 2rem !important;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  .prebook-status-table {
+    .table-content-block {
+      width: 100%;
+      overflow-x: auto;
+      padding: 0;
+    }
+  }
+}
+
+.no-preorders-yet {
+  h4 {
+    margin-bottom: 1.5rem;
+  }
+}
+.prebook-table {
+  tr td {
+    text-transform: unset;
+  }
+  .fold-row {
+    td {
+      padding: 0 !important;
+      border: none !important;
+      word-break: break-all;
+      .fold-row-table {
+        background: #f2f2f2;
+        tr td {
+          padding: 0.6rem 1rem !important;
+          white-space: normal;
+          text-transform: unset;
+          font-size: 1.1rem;
+          border-bottom: solid 1px #e6e7e8;
+          color: #696969;
+          // word-break: break-all;
+        }
+      }
+    }
+  }
+  .count {
+    min-width: 4rem;
+    max-width: 4rem;
+  }
+  .name {
+    min-width: 12rem;
+    max-width: 12rem;
+  }
+  .date {
+    min-width: 15rem;
+    max-width: 15rem;
+  }
+  .quantity {
+    min-width: 7rem;
+    max-width: 7rem;
+  }
+  .alloted {
+    min-width: 6rem;
+    max-width: 6rem;
+  }
+  .amount {
+    min-width: 10rem;
+    max-width: 10rem;
+    img {
+      height: 1.2rem;
+      width: 1.2rem;
+      margin-right: 0.2rem;
+    }
+  }
+  .expand-icon {
+    width: 3.5rem;
+    svg {
+      background: #000;
+      padding: 0.2rem;
+      color: #fff;
+      border-radius: 50rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}

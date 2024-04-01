@@ -1,0 +1,374 @@
+@import "../../../styles/common";
+
+.pop-body-container-burnBatNftHistory {
+  position: relative;
+  .pop-nft-details-burnBatNftHistory {
+    position: relative;
+    // max-height: calc(100vh - 8rem);
+    max-height: calc(100vh - 6rem);
+    overflow: hidden;
+
+    .pop-head-content-burnBatNftHistory {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.1rem 1.1rem;
+      color: white;
+      background: transparent linear-gradient(97deg, #5d0e4e 0%, #722807 100%)
+        0% 0% no-repeat padding-box;
+      box-shadow: 0px 0px 16px #00000099;
+      border: 2px solid #671101;
+      border-radius: 1.5rem 0 0 0;
+      @media screen and (max-width: 767px) {
+        border-radius: 0;
+      }
+
+      .pop-bid-title-burnBatNftHistory {
+        font-size: 2rem;
+        font-family: $proxima-nova;
+        font-weight: 600;
+        @media screen and (max-width: 540px) {
+          font-size: 1.5rem;
+        }
+      }
+      .close-button-pop-burnBatNftHistory {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        svg {
+          fill: #fff;
+        }
+        svg,
+        img {
+          height: 1.5rem;
+          width: 1.5rem;
+          filter: invert(1);
+          @media screen and (max-width: 540px) {
+            height: 1.2rem;
+            width: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .confirmation_popup {
+      width: 100%;
+      .sub-heading {
+        font-weight: 600;
+      }
+      // .burn-listed-nfts {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      //   align-items: center;
+      //   justify-content: flex-start;
+      //   width: 100%;
+
+      //   li {
+      //     width: 50%;
+
+      //     margin: 1rem 0;
+      //     @media screen and (max-width: 580px) {
+      //       width: 100%;
+      //     }
+
+      //   }
+      // }
+
+      .burn-nft-card {
+        display: flex;
+        // flex-direction: column;
+        grid-gap: 0.5rem;
+        gap: 1rem;
+        border: none;
+        align-items: center;
+        justify-content: flex-start;
+        // text-align: center;
+        margin-top: 1rem;
+        .img-block {
+          img {
+            border-radius: 0.5rem;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            width: 10rem;
+            height: 10rem;
+            aspect-ratio: 1/1;
+            @media screen and (max-width: 680px) {
+              width: 8rem;
+              height: 8rem;
+            }
+          }
+        }
+        .content-block {
+          .nft-name {
+            cursor: pointer;
+            margin-bottom: 0.2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+            //   @media screen and (max-width: 420px) {
+            //     font-size: 1.1rem;
+            //     margin: 0;
+            //   }
+            @media screen and (max-width: 375px) {
+              font-size: 1.2rem;
+            }
+          }
+          span {
+            font-size: 0.9rem;
+            line-height: 1;
+            color: #de6f01;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            @media screen and (max-width: 420px) {
+              font-size: 0.8rem;
+            }
+          }
+
+          .nft_stats {
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #000;
+            border-radius: 50rem;
+            padding: 0.3rem 1rem;
+            margin-top: 1rem;
+
+            & > div {
+              // width: 33.33%;
+              text-align: center;
+              color: #ffffff;
+              border-right: 0.05rem solid #ffffff5e;
+              &:last-child {
+                border-right: none;
+              }
+            }
+            .player-type {
+              img {
+                // height: 1.8rem;
+                // width: 1.8rem;
+                height: 3rem;
+                width: 3rem;
+                background: #000;
+                padding: 0.2rem;
+                border-radius: 50%;
+                object-fit: contain;
+              }
+            }
+
+            .bat-type-2x {
+              img {
+                height: 2.5rem;
+                width: 3rem;
+                background: #000;
+                padding: 0.2rem;
+                border-radius: 50%;
+                object-fit: contain;
+              }
+            }
+            .player-range {
+              padding: 0 1rem;
+              margin-right: 0rem;
+              font-weight: 600;
+              // border-left: 0.05rem solid #ffffff5e;
+
+              // margin-right: 1rem;
+              .band {
+                font-size: 1rem;
+                padding: 0.1rem 0rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                letter-spacing: 0.08rem;
+                line-height: 1.3;
+                border-radius: 0;
+                color: #ffffff;
+                font-size: 1rem;
+                line-height: 1;
+                margin: 0;
+              }
+            }
+            .player-level {
+              display: flex;
+              flex-direction: row-reverse;
+              width: auto;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                height: auto;
+                width: 2rem;
+                margin-right: 0.5rem;
+                border-radius: 0 !important;
+                object-fit: contain;
+              }
+              h6 {
+                margin-bottom: 0;
+                color: #fff;
+                font-weight: 600;
+                font-size: 0.9rem;
+              }
+            }
+            &.vertical-align {
+              flex-direction: column;
+              & > div {
+                // width: 33.33%;
+                text-align: center;
+                color: #ffffff;
+                border: none;
+                border-bottom: 0.05rem solid #ffffff5e;
+                &:last-child {
+                  border-bottom: none;
+                }
+              }
+              .player-type img {
+                margin-bottom: 0.5rem;
+              }
+              .player-range {
+                padding: 1rem 0 !important;
+              }
+              .player-level {
+                flex-direction: column-reverse;
+                padding: 0.5rem 0;
+                img {
+                  height: auto;
+                  width: 1.8rem;
+                  margin-bottom: 0.5rem;
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .burn-hint {
+        margin: 2rem 0 0;
+        padding: 1rem 0;
+        text-align: justify;
+        ul {
+          padding: 1rem;
+          background: #f3f3f3;
+          border-radius: 0.5rem;
+          li {
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .burnBat-popup-wrapper {
+      height: calc(100vh - 10rem);
+      overflow-y: auto;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+    }
+  }
+}
+
+.popup-wrapper-canvas-burnBatNftHistory {
+  width: 100% !important;
+  max-width: 50rem !important;
+  border-radius: 1.5rem 0 0 1.5rem;
+  @media screen and (max-width: 767px) {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0;
+  }
+}
+
+.sticky-bottom-box {
+  position: sticky;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  .hint {
+    text-align: center;
+    line-height: 1.4;
+    margin: 0.2rem 0 0;
+  }
+  .confirmation_button {
+    .btn-dark {
+      &.secondary {
+        border: 0.1rem solid #de6f00 !important;
+        background-color: transparent !important;
+        color: #de6f00;
+        &:hover {
+          background-color: #de6f00 !important;
+          color: white;
+        }
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+  }
+  .error-txt {
+    color: red;
+  }
+}
+
+.loading-wrapper {
+  height: calc(100vh - 16rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #333333;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem 2rem;
+    > svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      > rect {
+        fill: none;
+        stroke: #333333;
+        stroke-width: 2px;
+        stroke-dasharray: 240 160 240 160;
+        stroke-dashoffset: 0;
+        animation: pathRect 2s linear infinite;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+      }
+    }
+  }
+}
+
+@keyframes pathRect {
+  25% {
+    stroke-dashoffset: 100;
+  }
+
+  50% {
+    stroke-dashoffset: 200;
+  }
+
+  75% {
+    stroke-dashoffset: 300;
+  }
+
+  100% {
+    stroke-dashoffset: 400;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../styles/common";
+
+.new-card-container label,
+.input-title {
+  font-family: $proxima-nova;
+  font-weight: 700;
+  font-weight: normal;
+  color: black;
+}
+
+.input-disabled {
+  cursor: default;
+}

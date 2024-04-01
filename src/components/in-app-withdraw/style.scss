@@ -1,0 +1,211 @@
+@import "../../styles/common";
+
+.pay-list-back {
+  display: flex;
+  align-items: center;
+  font-family: $proxima-nova;
+  font-weight: 600;
+  font-size: 1.2rem;
+  svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.current-balance {
+  box-shadow: 0 4px 15px 0 #ddd;
+  border-radius: 0.7rem;
+  color: black;
+
+  .cb-title {
+    font-size: 0.8rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+  }
+
+  .cb-balance {
+    font-size: 2rem;
+    font-family: $proxima-nova;
+    font-weight: 700;
+  }
+}
+
+.ac-step {
+  font-size: 0.9rem;
+  font-family: $proxima-nova;
+  font-weight: 600;
+}
+
+.ac-cc-title {
+  font-size: 1.13rem;
+  font-family: $proxima-nova;
+  font-weight: 700;
+
+  .optional {
+    color: gray;
+    font-size: 1rem;
+  }
+}
+
+.sf-amt-container {
+  display: flex;
+  align-items: center;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+
+  .af-amount {
+    width: 100%;
+    font-size: 1.2rem !important;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    font-weight: normal !important;
+    padding: 0.8rem 0.8rem 0.8rem 0;
+    border: none;
+    outline: none;
+  }
+  .af-symbol {
+    font-size: 1.2rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    padding: 0 0.2rem 0 0.8rem;
+  }
+}
+
+.btn-af-pay {
+  font-family: $proxima-nova;
+  font-weight: 600;
+  font-weight: normal !important;
+  padding: 0.6rem !important;
+}
+
+.add-card-new {
+  background-color: black;
+  border-radius: 0.6rem;
+  padding: 5rem;
+  text-align: center;
+
+  .add-card-new-text {
+    background-color: #ddd;
+    color: black;
+    padding: 0.4rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    border-radius: 50rem;
+  }
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none !important;
+}
+
+.loaded-info {
+  font-family: $proxima-nova;
+  font-weight: 600;
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.cvv-input {
+  border: 1px solid #000 !important;
+  font-size: 1.5rem !important;
+  padding: 27px 15px;
+  border-radius: 10px !important;
+}
+
+.fracto-brand {
+  font-family: $proxima-nova;
+  font-weight: 600;
+  font-size: 14px;
+
+  text-align: center;
+
+  color: #131e2b;
+
+  img {
+    margin-top: -12px;
+    margin-left: 5px;
+  }
+}
+
+.w-mode {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+  margin-right: 1rem;
+  cursor: pointer;
+
+  .title {
+    white-space: nowrap;
+    margin-right: 1.5rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 5px 1px #ccc;
+    border: 1px solid rgb(88, 88, 88);
+  }
+
+  &.active {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.wallet-address {
+  font-size: 0.8rem !important;
+  font-family: $proxima-nova;
+  font-weight: 600;
+  font-weight: normal !important;
+  padding: 0.8rem 0.8rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+  outline: none;
+}
+
+.bank-details-input {
+  font-size: 1.2rem !important;
+  font-family: $proxima-nova;
+  font-weight: 600;
+  font-weight: normal !important;
+  padding: 0.8rem 0.8rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+  outline: none;
+  &.upi-disable {
+    border: none;
+    outline: none;
+    background: #e9e9e9;
+    margin-bottom: 1rem;
+    pointer-events: none;
+  }
+  &.wait-msg {
+    border: none;
+    outline: none;
+    background: #e9e9e9;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}
+
+.crypto-text {
+  margin-top: -1.5rem;
+  font-size: 0.8rem;
+  font-family: "proxima-nova" !important;
+  font-weight: 600;
+  margin-left: 0.2rem !important;
+}

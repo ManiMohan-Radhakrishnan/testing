@@ -1,0 +1,26 @@
+@import "../../styles/common";
+
+.custom-bank {
+  color: #fff !important;
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+}
+
+.accounts-list-plaid {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  align-items: center;
+  .first {
+    font-family: $proxima-nova;
+    font-weight: 600;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px 2px #ccc;
+  }
+}

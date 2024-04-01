@@ -1,0 +1,402 @@
+{
+  "role": [
+    {
+      "name": "Bowler",
+      "key": "bowler",
+      "value": 0
+    },
+    {
+      "name": "Batsmen",
+      "key": "batsmen",
+      "value": 1
+    },
+    {
+      "name": "Bat",
+      "key": "bat",
+      "value": 2
+    }
+  ],
+  "bowler": {
+    "category": [
+      {
+        "name": "Rookie",
+        "key": "rookie",
+        "value": 3,
+        "type": "bowler"
+      },
+      {
+        "name": "Rare",
+        "key": "rare",
+        "value": 4,
+        "type": "bowler"
+      },
+      {
+        "name": "Epic",
+        "key": "epic",
+        "value": 5,
+        "type": "bowler"
+      },
+      {
+        "name": "Legend",
+        "key": "legend",
+        "value": 6,
+        "type": "bowler"
+      }
+    ],
+    "hand": [
+      {
+        "name": "RA",
+        "key": "ra",
+        "value": 10,
+        "type": "bowler"
+      },
+      {
+        "name": "LA",
+        "key": "la",
+        "value": 11,
+        "type": "bowler"
+      }
+    ],
+    "style": [
+      {
+        "name": "Fast",
+        "key": "fast",
+        "value": 14,
+        "type": "bowler"
+      },
+      {
+        "name": "Med Fast",
+        "key": "med_fast",
+        "value": 15,
+        "type": "bowler"
+      },
+      {
+        "name": "Leg Spin",
+        "key": "leg_spin",
+        "value": 16,
+        "type": "bowler"
+      },
+      {
+        "name": "Off Spin",
+        "key": "off_spin",
+        "value": 17,
+        "type": "bowler"
+      }
+    ],
+    "gender": [
+      {
+        "name": "Male",
+        "key": "male",
+        "value": 18,
+        "type": "bowler"
+      },
+      {
+        "name": "Female",
+        "key": "female",
+        "value": 19,
+        "type": "bowler"
+      }
+    ]
+  },
+  "batsmen": {
+    "category": [
+      {
+        "name": "Rookie",
+        "key": "rookie",
+        "value": 3,
+        "type": "batsmen"
+      },
+      {
+        "name": "Rare",
+        "key": "rare",
+        "value": 4,
+        "type": "batsmen"
+      },
+      {
+        "name": "Epic",
+        "key": "epic",
+        "value": 5,
+        "type": "batsmen"
+      },
+      {
+        "name": "Legend",
+        "key": "legend",
+        "value": 6,
+        "type": "batsmen"
+      }
+    ],
+    "hand": [
+      {
+        "name": "LH",
+        "key": "lh",
+        "value": 12,
+        "type": "batsmen"
+      },
+      {
+        "name": "RH",
+        "key": "rh",
+        "value": 13,
+        "type": "batsmen"
+      }
+    ],
+    "gender": [
+      {
+        "name": "Male",
+        "key": "male",
+        "value": 18,
+        "type": "batsmen"
+      },
+      {
+        "name": "Female",
+        "key": "female",
+        "value": 19,
+        "type": "batsmen"
+      }
+    ]
+  },
+  "bat": {
+    "category": [
+      {
+        "name": "Rare",
+        "key": "rare",
+        "value": 4,
+        "type": "bat"
+      },
+      {
+        "name": "Super Rare",
+        "key": "super_rare",
+        "value": 7,
+        "type": "bat"
+      },
+      {
+        "name": "Ultra Rare",
+        "key": "ultra_rare",
+        "value": 8,
+        "type": "bat"
+      },
+      {
+        "name": "Immortal",
+        "key": "immortal",
+        "value": 9,
+        "type": "bat"
+      },
+      {
+        "name": "Unique",
+        "key": "unique",
+        "value": 20,
+        "type": "crypto_bat"
+      },
+      {
+        "name": "Premium",
+        "key": "premium",
+        "value": 21,
+        "type": "crypto_bat"
+      },
+      {
+        "name": "Superior",
+        "key": "superior",
+        "value": 22,
+        "type": "crypto_bat"
+      },
+      {
+        "name": "Standard",
+        "key": "standard",
+        "value": 23,
+        "type": "crypto_bat"
+      }
+    ],
+    "signed_by": [
+      {
+        "label": "Damien Martyn",
+        "key": "damien_martyn",
+        "value": 20,
+        "type": "bat"
+      },
+      {
+        "label": "Sachin Tendulkar",
+        "key": "sachin_tendulkar",
+        "value": 21,
+        "type": "bat"
+      },
+      {
+        "label": "Don Bradman",
+        "key": "don_bradman",
+        "value": 22,
+        "type": "bat"
+      },
+      {
+        "label": "Shane Warne",
+        "key": "shane_warne",
+        "value": 23,
+        "type": "bat"
+      },
+      {
+        "label": "Glenn McGrath",
+        "key": "glenn_mcgrath",
+        "value": 24,
+        "type": "bat"
+      },
+      {
+        "label": "Harbhajan Singh",
+        "key": "harbhajan_singh",
+        "value": 25,
+        "type": "bat"
+      },
+      {
+        "label": "Andrew Symonds",
+        "key": "andrew_symonds",
+        "value": 26,
+        "type": "bat"
+      },
+      {
+        "label": "Adam Gilchrist",
+        "key": "adam_gilchrist",
+        "value": 27,
+        "type": "bat"
+      },
+      {
+        "label": "Matthew Hayden",
+        "key": "matthew_hayden",
+        "value": 28,
+        "type": "bat"
+      },
+      {
+        "label": "Michael Bevan",
+        "key": "michael_bevan",
+        "value": 29,
+        "type": "bat"
+      },
+      {
+        "label": "Rahul Dravid",
+        "key": "rahul_dravid",
+        "value": 30,
+        "type": "bat"
+      },
+      {
+        "label": "Ricky Ponting",
+        "key": "ricky_ponting",
+        "value": 31,
+        "type": "bat"
+      },
+
+      {
+        "label": "Viv Richards",
+        "key": "viv_richards",
+        "value": 32,
+        "type": "bat"
+      },
+      {
+        "label": "Darren Lehmann",
+        "key": "darren_lehmann",
+        "value": 33,
+        "type": "bat"
+      },
+      {
+        "label": "Shane Watson",
+        "key": "shane_watson",
+        "value": 34,
+        "type": "bat"
+      },
+
+      {
+        "label": "Clive Lloyd",
+        "key": "clive_lloyd",
+        "value": 35,
+        "type": "bat"
+      },
+      {
+        "label": "2003 CHAMPIONS & FINALISTS",
+        "key": "_2003_champions_finalists",
+        "value": 36,
+        "type": "bat"
+      },
+      {
+        "label": "2011 CHAMPIONS",
+        "key": "_2011_champions",
+        "value": 37,
+        "type": "bat"
+      },
+      {
+        "label": "1983 CHAMPIONS",
+        "key": "1983_champions",
+        "value": 38,
+        "type": "bat"
+      },
+      {
+        "label": "Alien DNA",
+        "key": "alien_dna",
+        "value": 39,
+        "type": "bat"
+      },
+      {
+        "label": "Insignia",
+        "key": "insignia",
+        "value": 40,
+        "type": "bat"
+      },
+      {
+        "label": "Mecha",
+        "key": "mecha",
+        "value": 41,
+        "type": "bat"
+      }
+    ]
+  },
+  "0": "Bowler",
+  "1": "Batsmen",
+  "2": "Bat",
+  "3": "Rookie",
+  "4": "Rare",
+  "5": "Epic",
+  "6": "Legend",
+  "7": "Super Rare",
+  "8": "Ultra Rare",
+  "9": "Immortal",
+  "10": "RA",
+  "11": "LA",
+  "12": "LH",
+  "13": "RH",
+  "14": "Fast",
+  "15": "Med Fast",
+  "16": "Leg Spin",
+  "17": "Off Spin",
+  "18": "Male",
+  "19": "Female",
+  "20": "Damien Martyn",
+  "21": "Sachin Tendulkar",
+  "22": "Don Bradman",
+  "23": "Shane Warne",
+  "24": "Glenn McGrath",
+  "25": "Harbhajan Singh",
+  "26": "Andrew Symonds",
+  "27": "Adam Gilchrist",
+  "28": "Matthew Hayden",
+  "29": "Michael Bevan",
+  "30": "Rahul Dravid",
+  "31": "Ricky Ponting",
+  "32": "Viv Richards",
+  "33": "Darren Lehmann",
+  "34": "Shane Watson",
+  "35": "Clive Lloyd",
+  "36": "2003 CHAMPIONS",
+  "36": "2003 FINALISTS",
+  "37": "2011 CHAMPIONS",
+  "38": "1983 CHAMPIONS",
+  "39": "Alien DNA",
+  "40": "Insignia",
+  "41": "Mecha",
+
+  "category": {
+    "3": "Rookie",
+    "4": "Rare",
+    "5": "Epic",
+    "6": "Legend",
+    "7": "Super Rare",
+    "8": "Ultra Rare",
+    "9": "Immortal",
+    "20": "Unique",
+    "21": "Premium",
+    "22": "Superior",
+    "23": "Standard"
+  }
+}

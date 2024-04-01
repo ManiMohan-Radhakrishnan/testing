@@ -1,0 +1,18 @@
+.add-fund-wrapper {
+  margin: auto;
+  // max-width: 90%;
+
+  @media only screen and (min-width: 993px) {
+    // max-width: 48%;
+  }
+
+  .form-group {
+    .input-title {
+      font-weight: 700 !important;
+    }
+    .form-control {
+      border: 1px solid black !important;
+      border-radius: 0.6rem;
+    }
+  }
+}

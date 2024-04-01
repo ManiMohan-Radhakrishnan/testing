@@ -1,0 +1,16 @@
+@import "../../styles/common";
+
+.tooltip-text {
+  font-family: $proxima-nova;
+  font-weight: 400;
+  z-index: 2147483650;
+  
+
+  .tooltip-inner {
+    padding: 0.6rem;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    max-width: 25rem !important;
+    white-space: wrap;
+  }
+}

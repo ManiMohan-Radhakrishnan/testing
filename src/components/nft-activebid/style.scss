@@ -1,0 +1,92 @@
+@import "../../styles/common";
+
+.outbid {
+  &-status {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0.2rem;
+    position: relative;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    background: #212031;
+    height: calc(100% - 2rem);
+    margin: 1rem 0 !important;
+    .info-icon {
+      color: #c2c2c2cc !important;
+      font-size: 1.4rem;
+      position: absolute;
+      right: 0.5rem;
+      cursor: pointer;
+    }
+  }
+  &-post-image {
+    max-height: 20rem;
+    overflow: hidden;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &-post-detail {
+    // position: relative;
+    padding: 1rem;
+    .outbid-info {
+      .post {
+        &-title {
+          margin-top: 1rem;
+          line-height: 1.2;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: calc(100% - 3rem);
+          color: #e2e2e2;
+          font-size: 1.3rem;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          margin-top: 0;
+        }
+        &-cost {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: static;
+          bottom: 0rem;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  &-auction-status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    transition: 0.5s all ease;
+    transform: translateX(102%);
+    padding-top: 3rem;
+    &.active {
+      transform: translateX(0%);
+    }
+    .close-icon {
+      color: #000;
+      font-size: 1.8rem;
+      padding: 0 !important;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+    }
+    .post-title {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      line-height: 1.2;
+      white-space: normal;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@import "../../styles/common";
+.inner-card-details {
+  width: 70%;
+  margin: auto;
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
+  button.btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pay-list-back {
+    display: flex;
+    align-items: center;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .current-balance {
+    box-shadow: #00000014 0px 10px 30px;
+    border-radius: 0.7rem;
+    color: black;
+
+    .cb-title {
+      font-size: 0.8rem;
+      font-family: $proxima-nova;
+      font-weight: 600;
+    }
+
+    .cb-balance {
+      font-size: 2rem;
+      font-family: $proxima-nova;
+      font-weight: 700;
+    }
+  }
+
+  .ac-step {
+    font-size: 0.9rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+  }
+
+  .ac-cc-title {
+    font-size: 1.13rem;
+    font-family: $proxima-nova;
+    font-weight: 700;
+  }
+
+  .qr-terms {
+    font-size: 0.9rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    color: #6d0a0a;
+    margin-bottom: 0.5rem;
+  }
+
+  .wallet-address {
+    font-size: 0.8rem !important;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    font-weight: normal !important;
+    padding: 0.8rem 0.8rem;
+    width: 100%;
+    border-radius: 0.7rem;
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .success-card {
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.3rem !important;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem !important;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    svg {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .otp-input {
+    padding: 0;
+  }
+  .float-icons {
+    position: relative;
+
+    svg.eye {
+      position: absolute;
+      bottom: 1.1rem;
+      right: 1rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+.flex-input-grp {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .inr-input {
+    width: 60%;
+    padding-right: 0.5rem;
+  }
+  .current-balance {
+    width: 40%;
+    box-shadow: none;
+    .cb-balance {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 0.55rem 1rem;
+      text-align: center;
+      background: #ededed;
+      border-radius: 0.5rem;
+      @media screen and (max-width: 991px) {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    .inr-input,
+    .current-balance {
+      width: 100%;
+    }
+    .inr-input {
+      padding-right: 0rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.scan-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  span {
+    font-weight: 400;
+    font-size: 85%;
+  }
+}

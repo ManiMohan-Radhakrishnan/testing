@@ -1,0 +1,21 @@
+@import "../../styles/common";
+
+.password-terms {
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  color: #222 !important;
+  font-family: $proxima-nova;
+  font-weight: 600;
+}
+.float-icon {
+  position: relative;
+
+  svg.eye {
+    position: absolute;
+    top: initial;
+    right: 0.5rem;
+    opacity: 0.5;
+    bottom: 0.9rem;
+    width: 2rem;
+  }
+}

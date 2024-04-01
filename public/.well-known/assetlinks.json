@@ -1,0 +1,19 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+        "namespace": "android_app",
+        "package_name": "com.jump.trade",
+        "sha256_cert_fingerprints": ["54:AD:0D:E1:2F:00:45:60:C2:66:A4:3C:F5:17:28:2C:87:1E:96:C4:97:E5:9B:0A:0B:76:DA:0B:00:BD:F6:3C"]
+    }
+},
+{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+        "namespace": "android_app",
+        "package_name": "com.jump.trade.debug",
+        "sha256_cert_fingerprints": ["54:AD:0D:E1:2F:00:45:60:C2:66:A4:3C:F5:17:28:2C:87:1E:96:C4:97:E5:9B:0A:0B:76:DA:0B:00:BD:F6:3C",
+            "7C:FB:AC:AE:37:AC:C4:36:E3:4E:47:0A:B4:DE:F2:2C:39:9F:02:3C:54:06:65:AE:20:74:62:0B:F6:76:F8:8C"
+        ]
+    }
+}
+]

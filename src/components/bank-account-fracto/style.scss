@@ -1,0 +1,66 @@
+@import "../../styles/common";
+
+.bank-account-blk {
+  border-radius: 0.6rem;
+  color: rgb(0, 0, 0);
+  padding-bottom: 1rem !important;
+  border: 1px solid #ddd;
+
+  &:hover {
+    box-shadow: 0 0 5px 1px #ccc;
+  }
+
+  svg.select {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  svg.active {
+    color: #00a954 !important;
+  }
+
+  &.selected {
+    background-image: none;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+
+    .number {
+      color: rgb(0, 0, 0);
+    }
+
+    svg {
+      color: rgb(199, 199, 199) !important;
+    }
+
+    svg.active {
+      color: #00a954 !important;
+    }
+  }
+
+  .remove-text-card {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    font-family: $proxima-nova;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:hover {
+    .top-section {
+      svg {
+        color: rgb(199, 199, 199) !important;
+      }
+
+      svg.active {
+        color: #00a954 !important;
+      }
+    }
+  }
+}

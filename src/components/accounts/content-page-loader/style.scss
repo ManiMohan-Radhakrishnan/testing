@@ -1,0 +1,24 @@
+.skeleton1 {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 4rem 3rem #c7cacb;
+  animation: skeletonAnimation 1.2s linear infinite;
+  background: #c7cacb;
+}
+
+@keyframes skeletonAnimation {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateX(50%);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateX(150%);
+    opacity: 0.2;
+  }
+}

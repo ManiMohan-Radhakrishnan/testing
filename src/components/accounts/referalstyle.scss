@@ -1,0 +1,35 @@
+.main-content-block {
+  ul.mynfttab {
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      height: 0px;
+    }
+
+    li {
+      margin-bottom: 0;
+      .nav-link {
+        margin-bottom: -1px;
+        background: 0 0;
+        border: 0.2rem solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        color: #848484;
+        font-size: 1.2rem;
+        font-weight: 600;
+        &.active,
+        &:hover,
+        &:focus,
+        &:active {
+          color: #000000;
+          background-color: transparent;
+          border: 0.2rem solid transparent;
+          border-bottom: 0.2rem solid #ec7c48 !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.countdown-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1.5rem;
+  a {
+    cursor: pointer;
+    color: red !important;
+    text-decoration: underline;
+  }
+}
+.user-phone {
+  color: blue;
+}
+.verify-pill {
+  background-color: #c4f0c4;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  .verify-img {
+    height: 1rem;
+    width: 1rem;
+
+    margin-right: 0.3rem;
+  }
+  .text-color {
+    color: green;
+  }
+}
+
+.loading-txt {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.enter-otp-btn {
+  border-bottom: 2px solid black;
+  font-size: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.text-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+ol.numeric-order {
+  list-style: auto !important;
+  padding: 0 1.5rem;
+}

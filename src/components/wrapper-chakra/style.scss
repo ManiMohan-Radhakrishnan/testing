@@ -1,0 +1,238 @@
+@import "../../styles/common";
+// .bl_signup_wrapper {
+//   background-image: url("https://cdn.guardianlink.io/product-hotspot/images/signin-bg_e4dd0c56.jpg");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center top;
+//   min-height: 100vh;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   background-attachment: fixed;
+// }
+.bl_signup_wrapper {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1d1c2c;
+
+  &:before {
+    content: "";
+    background-attachment: fixed;
+    background-image: url("https://cdn.guardianlink.io/product-hotspot/images/signin-bg_e4dd0c56.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    inset: 0 0 0 0;
+    opacity: 0.2;
+  }
+}
+
+.bl_form_box {
+  padding: 0rem;
+  border-radius: 30px;
+  // box-shadow: 0px 0px 40px -2px #c4c944;
+  background-color: #fff;
+  max-width: 28rem;
+  margin: 2rem 1rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  .form-cntnt-box {
+    padding: 2rem;
+  }
+  p {
+    font-size: 0.9rem;
+    color: #181818;
+    span.terms-text-reg {
+      font-size: 0.9rem;
+      color: #181818 !important;
+      font-family: $proxima-nova;
+      font-weight: 600;
+    }
+  }
+}
+p.mIntro {
+  display: none;
+}
+p.d-hide {
+  display: block;
+}
+.bl_form_box .bl_btn {
+  border-radius: 18px;
+  border: solid 1px #000;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0.6rem 2rem;
+  transition: 0.3s;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    bottom: -0.25rem;
+    left: -0.25rem;
+    background: transparent
+      linear-gradient(180deg, #e2ff00 0%, #18e0e0 47%, #e8318d 100%) 0% 0%
+      no-repeat padding-box;
+    border-radius: 2rem;
+    z-index: -1;
+  }
+  &:disabled {
+    background-color: rgb(71, 70, 70);
+  }
+}
+.bl_form_box .bl_btn_border {
+  border: solid 1px #000;
+  background: #fff;
+  color: #000;
+}
+
+.bl_form_box .bl_btn:hover {
+  border: solid 1px #000;
+  background: #fff;
+  color: #000;
+}
+
+.bl_form_box .bl_btn_border:hover {
+  background: #000;
+  color: #fff;
+}
+.bl_form_box .form-control {
+  padding: 0.8rem 2.5rem 0.8rem 0.8rem;
+  border-radius: 8px;
+  border: solid 1px #9c9c9b;
+  background-color: #fff;
+  height: 2.8rem;
+}
+.bl_form_box .form-control:focus {
+  box-shadow: 0 0 0 0.25rem #c3c4c540;
+}
+.bl_form_box input::placeholder {
+  color: #e7e7e9;
+}
+
+.bl_form_box input:-ms-input-placeholder {
+  color: #e7e7e9;
+}
+
+.bl_form_box input::-ms-input-placeholder {
+  color: #e7e7e9;
+}
+.bl_form_box label {
+  margin-bottom: 0.2rem;
+  color: #000;
+  font-size: 1rem;
+  font-family: $proxima-nova;
+  font-weight: 400;
+}
+
+.bl_form_box h4 {
+  margin-bottom: 2.2rem;
+  font-size: 2.5rem;
+}
+.bl_verification {
+  text-align: right;
+  margin: 1rem 0 0;
+}
+
+.bl_verification a {
+  text-decoration: none;
+  color: #000;
+}
+
+.bl_verification span {
+  color: #818181;
+}
+.bl_copyright {
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+}
+.bl_form_box .form-group i {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.bl_form_box .form-group {
+  position: relative;
+}
+.bl_copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.bl_forgot a {
+  color: #000;
+  text-decoration: underline;
+  &.bold-font {
+    font-family: $proxima-nova;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+img {
+  max-width: 100%;
+}
+.bl_nft {
+  max-width: 55%;
+}
+.bl_forgot span {
+  color: #000000;
+}
+.error_text {
+  margin-top: 0.24rem;
+  color: #f21e00;
+}
+
+.float-icon {
+  position: relative;
+  svg.eye {
+    position: absolute;
+    top: initial;
+    right: 0.5rem;
+    opacity: 0.5;
+    bottom: 0.9rem;
+    width: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bl_signup_wrapper {
+    padding-top: 5rem;
+  }
+  p.d-hide {
+    display: none;
+  }
+  p.mIntro {
+    display: block;
+  }
+}
+@media screen and (max-height: 767px) and (max-height: 1440px) {
+  .bl_signup_wrapper {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.body_signup_wrapper {
+  background-image: url("../../images/signup_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  background-attachment: fixed;
+}

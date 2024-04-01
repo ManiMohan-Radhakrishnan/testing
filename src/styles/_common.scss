@@ -1,0 +1,79 @@
+// proxima-nova Font family
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff2") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff2") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_bold-webfont.woff2") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_semibold-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_semibold-webfont.woff2")
+      format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/proxima-nova/proxima_nova_regular-webfont.woff")
+      format("woff2"),
+    url("../fonts/proxima-nova/proxima_nova_regular-webfont.woff2")
+      format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+// nunito-sans Font family
+
+@font-face {
+  font-family: "nunito-sans";
+  src: url("../fonts/nunito-sans/nunitosans-bold-webfont.woff") format("woff2"),
+    url("../fonts/nunito-sans/nunitosans-bold-webfont.woff2") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+$proxima-nova: "proxima-nova" !important;
+$nunito-sans: "nunito-sans" !important; //Bold Heading

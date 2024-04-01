@@ -1,0 +1,18 @@
+@import "../../styles/common";
+
+.terms-text-reg {
+  .terms-link {
+    color: #182aff !important;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.password-terms {
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  color: #222 !important;
+  font-family: $proxima-nova;
+  font-weight: 600;
+}

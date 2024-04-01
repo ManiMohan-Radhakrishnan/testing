@@ -1,0 +1,98 @@
+@import "../../styles/common";
+
+.pay-list-back {
+  display: flex;
+  align-items: center;
+  font-family: $proxima-nova;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.current-balance {
+  box-shadow: #00000014 0px 10px 30px;
+  border-radius: 0.7rem;
+  color: black;
+
+  .cb-title {
+    font-size: 0.8rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+  }
+
+  .cb-balance {
+    font-size: 2rem;
+    font-family: $proxima-nova;
+    font-weight: 700;
+  }
+}
+
+.ac-step {
+  font-size: 0.9rem;
+  font-family: $proxima-nova;
+  font-weight: 600;
+}
+
+.ac-cc-title {
+  font-size: 1.13rem;
+  font-family: $proxima-nova;
+  font-weight: 700;
+}
+
+.sf-amt-container {
+  display: flex;
+  align-items: center;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+  overflow: hidden;
+
+  .af-amount {
+    width: 100%;
+    font-size: 1.2rem !important;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    font-weight: normal !important;
+    padding: 0.6rem 0.8rem 0.6rem 0rem !important;
+    border: none;
+    outline: none;
+    &.upiid {
+      padding: 0.6rem 0.8rem 0.6rem 0.8rem !important;
+    }
+  }
+  .af-symbol {
+    font-size: 1.2rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    padding: 0 0.2rem 0 0.8rem;
+  }
+}
+
+.btn-af-pay {
+  font-family: $proxima-nova;
+  font-weight: 600;
+  font-weight: normal !important;
+  padding: 0.6rem;
+}
+
+.add-card-new {
+  background-color: black;
+  border-radius: 0.6rem;
+  padding: 5rem;
+  text-align: center;
+
+  .add-card-new-text {
+    background-color: #ddd;
+    color: black;
+    padding: 0.4rem;
+    font-family: $proxima-nova;
+    font-weight: 600;
+    border-radius: 50rem;
+  }
+}
+
+.loaded-info {
+  font-family: $proxima-nova;
+  font-weight: 600;
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}

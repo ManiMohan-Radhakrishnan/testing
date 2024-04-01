@@ -1,0 +1,324 @@
+@import "../../../styles/common";
+
+.refer-earnpage {
+  position: relative;
+  .refer-banner {
+    background-color: #312e67;
+    min-height: 35rem;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center right;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero-content-image {
+      position: absolute;
+      height: 18rem;
+      @media screen and (max-width: 1024px) {
+        height: 11rem;
+      }
+      @media screen and (max-width: 540px) {
+        opacity: 0.5;
+      }
+      &.left {
+        bottom: 0;
+        left: 2rem;
+      }
+      &.right {
+        right: 1rem;
+        top: calc(50% - 12rem);
+        @media screen and (max-width: 767px) {
+          top: calc(50% - 16rem);
+        }
+      }
+    }
+    .hero-content {
+      max-width: 55rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 3rem 0;
+      position: relative;
+      h1 {
+        font-family: $nunito-sans;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 3rem;
+      }
+      h5 {
+        color: #de6f00;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+      }
+      p {
+        color: #ffffffcc;
+        font-size: 1.3rem;
+        text-align: center;
+        max-width: 40rem;
+      }
+
+      .refer-link-band {
+        background-color: #302e67;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed #ffffff;
+        border-radius: 0.5rem;
+        margin: 1rem auto 2rem;
+        h5 {
+          color: #fff;
+          font-weight: 400;
+          margin: 0;
+          span {
+            font-size: 120%;
+            font-weight: 700;
+          }
+        }
+        .copy-btn {
+          color: #fff;
+          display: block;
+          margin: 0 0.3rem 0;
+          transition: 0.3s;
+          position: relative;
+          text-transform: capitalize;
+          font-size: 1rem;
+          background: transparent
+            linear-gradient(180deg, #ef9e5e 0%, #ed7c4a 100%) 0% 0% no-repeat
+            padding-box;
+          border: solid 1px transparent;
+          border-radius: 0.5rem;
+          padding: 0.2rem 1rem;
+          font-size: 1rem;
+          cursor: pointer;
+
+          font-family: $proxima-nova;
+          font-weight: 600;
+          white-space: nowrap;
+          @media screen and (max-width: 375px) {
+            width: 7.5rem;
+          }
+          &:hover,
+          &:focus,
+          &:active {
+            border: solid 1px #ed7c4a;
+            background: transparent;
+            color: #ed7c4a !important;
+          }
+        }
+      }
+      .share-btn {
+        color: #fff;
+        display: block;
+        margin: 0 0.3rem 0;
+        transition: 0.3s;
+        position: relative;
+        text-transform: capitalize;
+        font-size: 1rem;
+        border-radius: 5rem;
+        padding: 0.5rem 2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+        font-family: $proxima-nova;
+        font-weight: 600;
+        border: solid 1px #ef9e5e;
+        background: transparent;
+        color: #ef9e5e;
+        // @media screen and (max-width: 375px) {
+        //   width: 7.5rem;
+        // }
+        &:hover,
+        &:focus,
+        &:active {
+          background: transparent
+            linear-gradient(180deg, #ef9e5e 0%, #ed7c4a 100%) 0% 0% no-repeat
+            padding-box;
+          border: solid 1px transparent;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  section.refferal-program-info {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 30rem;
+    text-align: center;
+    padding: 3rem 0rem;
+    &.drop {
+      background: #1d1c2c;
+    }
+    &.premium {
+      background: #2b2a40;
+    }
+    .section-heading {
+      font-size: 2rem;
+      font-family: $nunito-sans;
+      margin-bottom: 3rem;
+    }
+    .referral-program-info-detail {
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: 991px) {
+        flex-direction: row;
+        max-width: 40rem;
+        margin: auto;
+      }
+      .refferal-icon-flex {
+        background: transparent linear-gradient(96deg, #5d0e4e 0%, #722807 100%)
+          0% 0% no-repeat padding-box;
+        border-radius: 1rem 1rem 0 0;
+        padding: 2rem 1rem;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        @media screen and (max-width: 991px) {
+          flex-direction: column;
+          // justify-content: space-around;
+          align-items: center;
+          width: 14rem;
+          padding: 0rem;
+          border-radius: 1rem 0 0 1rem;
+        }
+        @media screen and (max-width: 540px) {
+          width: 10rem;
+        }
+        @media screen and (max-width: 350px) {
+          width: 8rem;
+        }
+        .refferal-icon-flex-box {
+          width: 20%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            height: 0.1rem;
+            width: 60%;
+            // top: calc(50% - 1rem);
+            // left: calc(100% - 5rem);
+            top: calc(25%);
+            left: calc(70%);
+            background-image: linear-gradient(
+              90deg,
+              #ffffffcc,
+              #ffffffcc 50%,
+              transparent 50%,
+              transparent 100%
+            );
+            background-size: 0.9rem 0.1rem;
+            border: none;
+          }
+          &:last-child {
+            &::before {
+              content: none;
+            }
+          }
+          @media screen and (max-width: 991px) {
+            width: 100%;
+            height: 14rem;
+            padding: 1rem 2rem 1rem 1rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            &::before {
+              content: none;
+            }
+          }
+          @media screen and (max-width: 375px) {
+            height: 18rem;
+          }
+          .refferal-icon {
+            height: 2.4rem;
+            width: 2.4rem;
+            margin-bottom: 0.5rem;
+            @media screen and (max-width: 991px) {
+              margin-bottom: 1.5rem;
+            }
+          }
+          h5 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin: 0;
+          }
+        }
+      }
+      .refferal-content-flex {
+        background: #ffffff;
+        border-radius: 0 0 1rem 1rem;
+        padding: 0rem;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        color: #333333;
+        text-align: left;
+        @media screen and (max-width: 991px) {
+          flex-direction: column;
+          // justify-content: space-around;
+          align-items: center;
+          width: calc(100% - 14rem);
+          border-radius: 0 1rem 1rem 0;
+        }
+        @media screen and (max-width: 540px) {
+          width: calc(100% - 10rem);
+        }
+        @media screen and (max-width: 350px) {
+          width: calc(100% - 8rem);
+        }
+        .refferal-content-flex-box {
+          width: 20%;
+          padding: 2rem 1rem 1rem;
+          box-shadow: -0.2rem 0px 0.5rem #00000033;
+          P {
+            font-size: 1rem;
+            line-height: 1.4;
+            &.hint {
+              font-size: 0.8rem !important;
+              color: #646464;
+              margin: 0;
+            }
+          }
+          @media screen and (max-width: 991px) {
+            width: 100%;
+            height: 14rem;
+            padding: 1rem 1rem 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0rem -0.2rem 0.5rem #00000033;
+            P {
+              font-size: 1.1rem;
+              &.hint {
+                font-size: 0.9rem !important;
+              }
+            }
+          }
+          @media screen and (max-width: 540px) {
+            P {
+              font-size: 1rem;
+              &.hint {
+                font-size: 0.8rem !important;
+              }
+            }
+          }
+          @media screen and (max-width: 375px) {
+            height: 18rem;
+          }
+        }
+      }
+    }
+  }
+}

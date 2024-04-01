@@ -1,0 +1,18 @@
+@import "../../styles/common";
+
+.nft-counter {
+  .counter-time {
+    font-size: 2.3rem;
+    font-family: $proxima-nova;
+    font-weight: 700;
+  }
+  .counter-interval {
+    margin-left: 0.2rem;
+    font-size: 1.5rem;
+    font-family: $proxima-nova;
+    font-weight: 700;
+  }
+  .interval-gap {
+    margin-right: 0.6rem;
+  }
+}

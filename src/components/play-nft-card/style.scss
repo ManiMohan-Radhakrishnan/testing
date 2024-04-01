@@ -1,0 +1,238 @@
+@import "../../styles/common";
+
+.mynftplaynft-card-block {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .mynftplaynft-card-box {
+    width: 24%;
+    margin: 0.5%;
+    @media screen and (max-width: 1024px) {
+      width: 32%;
+    }
+    @media screen and (max-width: 840px) {
+      width: 49%;
+    }
+    @media screen and (max-width: 520px) {
+      width: 100%;
+    }
+
+    &.playnft-card-nft {
+      .block-box-playnft.jt-card-playnft {
+        padding: 0.2rem;
+        position: relative;
+        border-radius: 0.3rem;
+        background: transparent
+          linear-gradient(180deg, #e2ff00 0%, #18e0e0 47%, #e8318d 100%) 0% 0%
+          no-repeat padding-box;
+        &::before {
+          content: "";
+          position: absolute;
+          background: #000;
+          top: 0.2rem;
+          bottom: 0.2rem;
+          left: 0.2rem;
+          right: 0.2rem;
+          z-index: 0;
+          border-radius: 0.3rem;
+        }
+
+        .img-card {
+          position: relative;
+          z-index: 1;
+          object-fit: cover;
+          width: 100%;
+          margin: auto;
+          display: table;
+          padding: 0;
+          height: 100%;
+        }
+        .playnft-content {
+          padding: 1rem !important;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          .user-title-playnft {
+            .main-card-title {
+              font-family: $proxima-nova;
+              font-weight: 600;
+              font-size: 1.3rem;
+              border-bottom: 0.07rem solid #f5ff00;
+              padding-bottom: 0.2rem;
+              margin-bottom: 0.5rem;
+              color: #fff;
+            }
+            .card-title-div-playnft {
+              color: #fff;
+              font-family: $proxima-nova;
+              font-weight: 600;
+              font-size: 1rem;
+            }
+            .card-quantity-playnft {
+              color: #f5ff00;
+              font-family: $proxima-nova;
+              font-weight: 700;
+              letter-spacing: 0.1rem;
+              font-size: 1.8rem;
+            }
+          }
+        }
+        .view-all-card-button-playnft {
+          .upgrade-btn-playnft {
+            border-radius: 50rem;
+            border: solid 1px #000;
+            background-color: #000;
+            color: #fff;
+            display: block;
+            width: 100%;
+            margin: 0 0 1rem;
+            margin-top: 0.3rem !important;
+            margin-bottom: 1.5rem !important;
+            padding: 0;
+            transition: 0.3s;
+            position: relative;
+            font-family: $proxima-nova;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            span {
+              border: solid 1px #000;
+              background-color: #000;
+              color: #fff;
+              display: block;
+              width: 100%;
+              margin: 0;
+              padding: 0.6rem 2rem;
+              transition: 0.3s;
+              position: relative;
+              font-family: $proxima-nova;
+              font-weight: 700;
+              text-transform: uppercase;
+              z-index: 1;
+              border-radius: 50rem;
+              &:hover {
+                transition: 0.3s;
+                background-color: #d5ff18 !important;
+                color: #000;
+                background: transparent
+                  linear-gradient(90deg, #d5ff18 0%, #5ff643 100%) 0% 0%
+                  no-repeat padding-box;
+                font-family: $proxima-nova;
+                font-weight: 700;
+              }
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              top: -0.25rem;
+              right: -0.25rem;
+              bottom: -0.25rem;
+              left: -0.25rem;
+              background: transparent
+                linear-gradient(180deg, #e2ff00 0%, #18e0e0 47%, #e8318d 100%)
+                0% 0% no-repeat padding-box;
+              background: transparent img
+                linear-gradient(90deg, #d5ff18 50%, #5df643 100%) 0% 0%
+                no-repeat padding-box;
+              border-radius: 2rem;
+              z-index: 0;
+            }
+
+            &:disabled {
+              background-color: rgb(71, 70, 70);
+              opacity: 0.5 !important;
+              span {
+                &:hover {
+                  background: rgb(71, 70, 70) !important;
+                  opacity: 0.5 !important;
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .skew_box {
+            .wrap-playnft {
+              .box {
+                &.box2 {
+                  flex-direction: row !important;
+                  justify-content: space-evenly !important;
+                  p {
+                    color: #7c7c7c !important;
+                    font-size: 0.9rem !important;
+                  }
+                  h2 {
+                    color: #d5ff18;
+                  }
+                  @media only screen and (max-width: 767px) and (max-width: 1440px) {
+                    flex-direction: row !important;
+                    font-size: 0.8rem !important;
+                  }
+                }
+              }
+            }
+          }
+          .skew-box-wrapper-playnft {
+            .wrap-playnft {
+              background: linear-gradient(
+                295deg,
+                #1b1c1b 55.9%,
+                black 50.05%
+              ) !important;
+              padding: 0 1rem !important;
+
+              .buy-to-upgradde-playnft {
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: -0.15rem;
+                  right: -0.15rem;
+                  bottom: -0.15rem;
+                  left: -0.15rem;
+                  background: transparent
+                    linear-gradient(90deg, #d5ff18 50%, #5df643 100%) 0% 0%
+                    no-repeat padding-box !important;
+                  box-shadow: 0 0 1px #000000, 0 0 0px #fff, 0 0 10px #5ab238,
+                    0 0 0px #000000;
+                }
+                span {
+                  border: none;
+                  background-color: #212031;
+                  text-transform: capitalize;
+                  padding: 0.2rem 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.expire-card-nft {
+        overflow: hidden;
+        position: relative;
+        &::before {
+          content: "Expired";
+          position: absolute;
+          background: #f5ff00;
+          top: 1.5rem;
+          left: -2.8rem;
+          z-index: 2;
+          border-radius: 0.3rem;
+          transform: rotate(-45deg);
+          height: 2rem;
+          width: 11rem;
+          text-align: center;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          font-family: $proxima-nova;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

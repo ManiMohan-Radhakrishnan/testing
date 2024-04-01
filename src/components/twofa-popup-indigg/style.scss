@@ -1,0 +1,103 @@
+@import "../../styles/common";
+
+.guilduser-profile-section {
+  .disable {
+    pointer-events: none;
+  }
+}
+.twofa-modal-body {
+  .enter-otp-section {
+    position: relative;
+    .otp-input {
+      padding: 0;
+    }
+    .user-image {
+      height: 3rem;
+      border-radius: 50%;
+      width: 3rem;
+      object-fit: cover;
+      margin-right: 1rem;
+    }
+    .user-profile-detail-heading {
+      font-family: $proxima-nova;
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: #828282;
+    }
+    .user-profile-detail-value {
+      font-size: 1.2rem;
+      h6 {
+        font-family: $proxima-nova;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin: 0;
+      }
+
+      .name-group {
+        .name-info {
+          font-size: 1rem;
+          max-width: 20rem;
+          color: #929394;
+        }
+        h4 {
+          font-size: 1.3rem;
+          word-break: break-word;
+          color: #000;
+          margin-bottom: 0.3rem;
+          margin-top: 0;
+          font-weight: 600;
+        }
+        h6 {
+          color: #5e5e5e;
+          font-family: $proxima-nova;
+          font-weight: 400;
+        }
+      }
+      h6.kyc-block {
+        font-size: 0.9rem !important;
+        margin-top: 0.3rem !important;
+        text-transform: capitalize;
+
+        span {
+          padding: 0.2rem 1rem;
+          display: inline-block;
+          border-radius: 50rem;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          background: #e1e1e1;
+          // [“success”, nil, “failed”, “expired”, “partially_verified”]
+          &.success {
+            background: #1a8754;
+            color: #fff;
+          }
+          &.failed,
+          &.expired {
+            background: #dc3545;
+            color: #fff;
+          }
+          &.partially_verified {
+            background: #ffc008;
+            color: #fff;
+          }
+        }
+      }
+      button {
+        font-family: $proxima-nova;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.user-mail-section {
+  .user-profile-email.user-profile-detail-value {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .otp-input {
+    padding: 0rem;
+  }
+}
