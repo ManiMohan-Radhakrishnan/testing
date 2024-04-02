@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import { FiArrowLeft } from "react-icons/fi";
 import { PlaidLink } from "react-plaid-link";
 
-import { getCookies } from "../../utils/cookies";
 import fracto from "../../images/fracto.svg";
 import BankAccount from "../bank-account-fracto";
 import {
