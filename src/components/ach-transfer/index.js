@@ -142,26 +142,29 @@ const ACHPayment = ({
     }
   };
 
-  const onSuccess = useCallback(async (public_token, metadata) => {
-    setLoading(true);
-    try {
-      await achVerify({
-        accountId: metadata.accounts[0].id,
-        publicToken: public_token,
-      });
-      setLoading(false);
+  const onSuccess = useCallback(
+    async (public_token, metadata) => {
+      setLoading(true);
+      try {
+        await achVerify({
+          accountId: metadata.accounts[0].id,
+          publicToken: public_token,
+        });
+        setLoading(false);
 
-      toast.success("Your account has been added successfully");
-      setTrigger(!trigger);
-    } catch (error) {
-      setLoading(false);
-      console.log("🚀 ~ file: index.js ~ line 46 ~ onSuccess ~ error", error);
+        toast.success("Your account has been added successfully");
+        setTrigger(!trigger);
+      } catch (error) {
+        setLoading(false);
+        console.log("🚀 ~ file: index.js ~ line 46 ~ onSuccess ~ error", error);
 
-      toast.error(
-        "A bank account with the same bank is associated with your Jump.trade account - you can have only one bank account per bank attached to Jump.trade. You can choose to remove your existing account or add another bank's account."
-      );
-    }
-  }, []);
+        toast.error(
+          "A bank account with the same bank is associated with your Jump.trade account - you can have only one bank account per bank attached to Jump.trade. You can choose to remove your existing account or add another bank's account."
+        );
+      }
+    },
+    [trigger]
+  ); // Include trigger in the dependency array
 
   return (
     <>
