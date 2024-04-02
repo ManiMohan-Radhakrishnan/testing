@@ -707,7 +707,7 @@ const Wallet = () => {
     if (depositModal === "deposit") {
       setAddFund({ ...addFund, show: true, type: "" });
     }
-  }, []);
+  }, [depositModal]);
 
   const typeClose = () => {
     if (depositModal === "deposit") {
