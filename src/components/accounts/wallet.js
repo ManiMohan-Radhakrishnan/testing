@@ -76,7 +76,7 @@ import TransakPayment from "../transak-payment";
 import BitbnsPayment from "../bit-bns";
 import InAppWithdraw from "../in-app-withdraw";
 import DogeCoinsRewards from "../dogecoins-rewards";
-import WalletDashboard from "./wallet-dashboard/wallet-dashboard";
+// import WalletDashboard from "./wallet-dashboard/wallet-dashboard";
 import RewardsHistoryPop from "../rewards-history-pop";
 import OnmetaPayment from "../onmeta-payment";
 import UpiPayment from "../upi-payment";
@@ -810,7 +810,7 @@ const Wallet = () => {
                   <div className="wallet-referral mt-3">
                     <div className="row g-3">
                       <div className="col-12">
-                        <WalletDashboard
+                        {/* <WalletDashboard
                           handleDeposit={handleDeposit}
                           setRewardsPop={setRewardsPop}
                           setRewardsHistoryPop={setRewardsHistoryPop}
@@ -820,7 +820,7 @@ const Wallet = () => {
                           UtCoinRewardsPop={UtCoinRewardsPop}
                           dogeCoinRewardsPop={dogeCoinRewardsPop}
                           getSummary={summary}
-                        />
+                        /> */}
                       </div>
                     </div>
                   </div>
