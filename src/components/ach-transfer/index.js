@@ -43,7 +43,7 @@ const ACHPayment = ({
 
   useEffect(() => {
     async function createLinkToken() {
-      const token = getCookies();
+      // const token = getCookies();
       let response = await getlinkToken();
 
       setToken(response.data.data.link_token);
