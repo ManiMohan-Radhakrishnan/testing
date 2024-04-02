@@ -64,13 +64,8 @@ import {
   invokeTrackEvent,
 } from "../../utils/common";
 
-import utCoin from "../../images/coin.png";
-import dogeCoin from "../../images/dogecoin.png";
-
 import { ReactComponent as DepositIcon } from "./../../images/deposit-icon.svg";
 import { ReactComponent as WithdrawIcon } from "./../../images/withdraw-icon.svg";
-import RewardWallet from "./reward-wallet-old";
-import UtCoinRewards from "../utcoins-rewards";
 import RewardsActivityPop from "../rewards-activity-pop";
 import TransakPayment from "../transak-payment";
 import BitbnsPayment from "../bit-bns";
