@@ -3,7 +3,7 @@ import utCoin from "../../../images/coin.png";
 import dogeCoin from "../../../images/dogecoin.png";
 import RewardWallet from "../reward-wallet";
 // import WalletDashboardChart from "../wallet-dashboard-chart/WalletDashboard";
-import WalletJTDashboardChart from "../wallet-dashboard-chart/WalletJTDashboard";
+// import WalletJTDashboardChart from "../wallet-dashboard-chart/WalletJTDashboard";
 
 import "./wallet.scss";
 import { currencyFormat } from "../../../utils/common";
@@ -109,7 +109,7 @@ const WalletDashboard = ({
           <div className="wallet-grid-body">
             <div className="wallet-grid-chart-box jtpoint-chart-box">
               {" "}
-              <WalletJTDashboardChart ChartData={AvailableJTFunds} />
+              {/* <WalletJTDashboardChart ChartData={AvailableJTFunds} /> */}
             </div>
             <div className="wallet-info-list">
               <ul className="jt_fund">
