@@ -61,10 +61,10 @@ const WalletDashboard = ({
           </div>
           <div className="wallet-grid-body">
             <div className="wallet-grid-chart-box">
-              <WalletDashboardChart
+              {/* <WalletDashboardChart
                 ChartData={AvailableFunds}
                 handleDeposit={handleDeposit}
-              />
+              /> */}
             </div>
             <div className="wallet-info-list">
               <ul className="gl_fund">
