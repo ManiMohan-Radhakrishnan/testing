@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import {
-  changePasswordApi,
-  whitelistedUpiList,
-  whitelistPaymentID,
-  whitelistSendOtp,
-  whitelistVerifyOtp,
-} from "../../api/methods";
-import { toast } from "react-toastify";
-import InputText from "./../input-text";
-import { validatePassword, validateUpi } from "./../../utils/common";
-import Modal from "react-bootstrap/Modal";
-import InputOTP from "../input-otp";
-import Switch from "react-switch";
-import { useDispatch, useSelector } from "react-redux";
-import { FaCheckCircle, FaEye, FaEyeSlash } from "react-icons/fa";
-import { whitelistPopUp } from "../../redux/actions/user_action";
-import UPIIcon from "../../images/jump-trade/imgs/upi-icon.svg";
+// import {
+//   changePasswordApi,
+//   whitelistedUpiList,
+//   whitelistPaymentID,
+//   whitelistSendOtp,
+//   whitelistVerifyOtp,
+// } from "../../api/methods";
+// import { toast } from "react-toastify";
+// import InputText from "./../input-text";
+// import { validatePassword, validateUpi } from "./../../utils/common";
+// import Modal from "react-bootstrap/Modal";
+// import InputOTP from "../input-otp";
+// import Switch from "react-switch";
+// import { useDispatch, useSelector } from "react-redux";
+// import { FaCheckCircle, FaEye, FaEyeSlash } from "react-icons/fa";
+// import { whitelistPopUp } from "../../redux/actions/user_action";
+// import UPIIcon from "../../images/jump-trade/imgs/upi-icon.svg";
 import CryptoWhitelist from "./crypto-whitelist";
 import UPIWhitelist from "./upi-whitelist";
 import ChooseWallet from "./choose-wallet";
