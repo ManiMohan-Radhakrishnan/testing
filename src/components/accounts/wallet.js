@@ -705,9 +705,9 @@ const Wallet = () => {
 
   useEffect(() => {
     if (depositModal === "deposit") {
-      setAddFund({ ...addFund, show: true, type: "" });
+      setAddFund((prevAddFund) => ({ ...prevAddFund, show: true, type: "" }));
     }
-  }, [depositModal]);
+  }, [depositModal, setAddFund]);
 
   const typeClose = () => {
     if (depositModal === "deposit") {
