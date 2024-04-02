@@ -598,6 +598,10 @@ const Wallet = () => {
     try {
       setReedemLoading(true);
       const result = await moveRedeem(rewardBalance?.slug);
+      console.log(
+        "🚀 ~ file: wallet.js ~ line 281 ~ handleReedem ~ result",
+        result
+      );
       getUserReward();
       getTransactionHistory(1);
 
