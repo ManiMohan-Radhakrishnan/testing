@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import utCoin from "../../../images/coin.png";
 import dogeCoin from "../../../images/dogecoin.png";
 import RewardWallet from "../reward-wallet";
-import WalletDashboardChart from "../wallet-dashboard-chart/WalletDashboard";
+// import WalletDashboardChart from "../wallet-dashboard-chart/WalletDashboard";
 import WalletJTDashboardChart from "../wallet-dashboard-chart/WalletJTDashboard";
 
 import "./wallet.scss";
