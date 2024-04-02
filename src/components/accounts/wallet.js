@@ -145,7 +145,7 @@ const Wallet = () => {
   const [summary, setSummary] = useState();
   const [withDrawTitle, setWithDrawTitle] = useState("Gl_wallet");
   const callIt = query.get("callit");
-  const IswithDraw = query.get("withdraw");
+  // const IswithDraw = query.get("withdraw");
   const Isdeposit = query.get("deposit");
   const IsType = query.get("depositType");
   const Ispath = query.get("path");
