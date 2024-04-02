@@ -685,29 +685,29 @@ const Wallet = () => {
     </Popover>
   );
 
-  const handleDeposit = useCallback(async () => {
-    try {
-      const result = await paymentStatusApi("deposit");
+  // const handleDeposit = useCallback(async () => {
+  //   try {
+  //     const result = await paymentStatusApi("deposit");
 
-      if (!result.data.data.allow_deposit) {
-        const token = getCookies();
-        if (token) dispatch(user_load_by_token_thunk(token));
-        setShowLocked("deposit");
-      }
-      setAddFund({ ...addFund, show: true, type: "" });
-    } catch (error) {
-      console.log(
-        "🚀 ~ file: wallet.js ~ line 371 ~ handleDeposit ~ error",
-        error
-      );
-    }
-  }, [
-    dispatch,
-    getCookies,
-    user_load_by_token_thunk,
-    setShowLocked,
-    setAddFund,
-  ]);
+  //     if (!result.data.data.allow_deposit) {
+  //       const token = getCookies();
+  //       if (token) dispatch(user_load_by_token_thunk(token));
+  //       setShowLocked("deposit");
+  //     }
+  //     setAddFund({ ...addFund, show: true, type: "" });
+  //   } catch (error) {
+  //     console.log(
+  //       "🚀 ~ file: wallet.js ~ line 371 ~ handleDeposit ~ error",
+  //       error
+  //     );
+  //   }
+  // }, [
+  //   dispatch,
+  //   getCookies,
+  //   user_load_by_token_thunk,
+  //   setShowLocked,
+  //   setAddFund,
+  // ]);
 
   useEffect(() => {
     if (depositModal === "deposit") {
