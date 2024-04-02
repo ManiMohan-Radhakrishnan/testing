@@ -78,6 +78,7 @@ import UpiPayment from "../upi-payment";
 
 import "./style.scss";
 import { useHistory } from "react-router-dom";
+import UtCoinRewards from "../utcoins-rewards";
 
 const Wallet = () => {
   const dispatch = useDispatch();
