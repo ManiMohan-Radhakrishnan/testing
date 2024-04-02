@@ -550,26 +550,26 @@ const Wallet = () => {
     }
   };
 
-  const handleOffLineCancelWithdraw = async (slug) => {
-    try {
-      loadingCancel(true, slug);
-      await offlinePaymentsCancel(slug);
-      await sleep(1000);
-      setPageNo(1);
-      getTransactionHistory(1);
-      loadingCancel(false, slug);
+  // const handleOffLineCancelWithdraw = async (slug) => {
+  //   try {
+  //     loadingCancel(true, slug);
+  //     await offlinePaymentsCancel(slug);
+  //     await sleep(1000);
+  //     setPageNo(1);
+  //     getTransactionHistory(1);
+  //     loadingCancel(false, slug);
 
-      toast.success("Deposit request cancelled successfully.");
-    } catch (err) {
-      loadingCancel(false, slug);
+  //     toast.success("Deposit request cancelled successfully.");
+  //   } catch (err) {
+  //     loadingCancel(false, slug);
 
-      console.log(
-        "🚀 ~ file: wallet.js ~ line 178 ~ handleOffLineCancelWithdraw ~ err",
-        err
-      );
-      toast.error("An unexpected error occured. Please try again  later");
-    }
-  };
+  //     console.log(
+  //       "🚀 ~ file: wallet.js ~ line 178 ~ handleOffLineCancelWithdraw ~ err",
+  //       err
+  //     );
+  //     toast.error("An unexpected error occured. Please try again  later");
+  //   }
+  // };
 
   const handleMoveBalance = async () => {
     setConfirm(false);
