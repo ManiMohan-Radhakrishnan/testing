@@ -701,7 +701,13 @@ const Wallet = () => {
         error
       );
     }
-  }, [dispatch, getCookies, paymentStatusApi, setShowLocked, setAddFund]);
+  }, [
+    dispatch,
+    getCookies,
+    user_load_by_token_thunk,
+    setShowLocked,
+    setAddFund,
+  ]);
 
   useEffect(() => {
     if (depositModal === "deposit") {
